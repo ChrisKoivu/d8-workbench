@@ -1,0 +1,7 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/personal.css: {}
+  js:
+    js/personal.js: {}
