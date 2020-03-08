@@ -1,0 +1,12 @@
+name: CK Layouts
+type: module
+description: 'Imports configuration for custom layout pages'
+package: Layouts
+version: '8.x'
+core: '8.x'
+
+dependencies:
+  - drupal:layout_builder
+  - drupal:layout_discovery
+
+project: 'Layouts'

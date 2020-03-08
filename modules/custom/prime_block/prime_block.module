@@ -1,0 +1,10 @@
+
+<?php
+
+function prime_block_theme($existing, $type, $theme, $path) {
+  return [
+    'prime_block' => [
+      'variables' => ['nodes' => NULL],
+    ],
+  ];
+}

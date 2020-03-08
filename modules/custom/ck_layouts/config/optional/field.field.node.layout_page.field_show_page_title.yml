@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_page_title
+    - node.type.layout_page
+id: node.layout_page.field_show_page_title
+field_name: field_show_page_title
+entity_type: node
+bundle: layout_page
+label: 'Show page title'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Show title'
+  off_label: 'Hide title'
+field_type: boolean

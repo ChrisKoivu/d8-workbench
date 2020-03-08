@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.layout_page.field_show_page_title
+    - node.type.layout_page
+  module:
+    - user
+id: node.layout_page.default
+targetEntityType: node
+bundle: layout_page
+mode: default
+content: {  }
+hidden:
+  field_show_page_title: true
+  links: true

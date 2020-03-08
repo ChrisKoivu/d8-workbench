@@ -1,0 +1,5 @@
+type: module
+name: Prime Block
+description: Display a block that shows prime dates
+package: Test
+core: 8.x
