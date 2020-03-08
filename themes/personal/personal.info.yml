@@ -17,6 +17,9 @@ libraries:
 regions:
   meta_header: 'Meta Header'
   header: Header
+  header_left: Header Left
+  header_center: Header Center
+  header_right: Header Right
   help: Help
   page_top: 'Page top'
   page_bottom: 'Page bottom'
