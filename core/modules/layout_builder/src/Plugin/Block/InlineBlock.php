@@ -241,7 +241,10 @@ class InlineBlock extends BlockBase implements ContainerFactoryPluginInterface, 
       else {
         $this->blockContent = $this->entityTypeManager->getStorage('block_content')->create([
           'type' => $this->getDerivativeId(),
-          'reusable' => FALSE,
+          //hard coded this to true for testing purposes. need to verify if isReusable
+          //will be set to true when creating inline blocks through layout builder
+          //also this setting will be wiped out automatically on next core update
+          'reusable' => TRUE,
         ]);
       }
       if ($this->blockContent instanceof RefinableDependentAccessInterface && $dependee = $this->getAccessDependency()) {
