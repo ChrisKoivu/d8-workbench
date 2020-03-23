@@ -1,0 +1,62 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{# {% if content %}
+  <div{{ attributes }}>
+    {{ content }}
+  </div>
+{% endif %} #}
+
+<header>
+
+
+
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav" style="{{ logged_in ? 'display:none;' : 'display:block;' }}">
+        <div class="container">
+        <a class="navbar-brand" href="http://127.0.0.1:8000/#page-top">Chris Koivu</a>
+        <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse large-10" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto text-uppercase">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/#services">
+                         Services
+                      </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                       <a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/#portfolio">
+                          Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                       <a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/#about">
+                          About
+                       </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                       <a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/#team">
+                           Team
+                       </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                       <a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/#contact">
+                          Contact
+                       </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>

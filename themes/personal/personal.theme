@@ -6,6 +6,9 @@
  * Implements hook_preprocess_block()
  */
 function personal_preprocess_block(&$variables) {
+    $config = \Drupal::config('system.site');
+    $variables['website_name'] = $config->get('name');
+    // ksm($variables);
 }
 
 /**
@@ -20,6 +23,8 @@ function personal_preprocess_field(&$variables, $hook) {
  * Adds additional classes
  */
 function personal_preprocess_html(&$variables) {
+    $variables['website_name'] = $variables["head_title"]["name"];
+     
 }
 
 /**
@@ -36,7 +41,16 @@ function personal_preprocess_node(&$variables) {
  * Add convenience variables and template suggestions
  */
 function personal_preprocess_page(&$variables) {
+    
 }
+
+function personal_preprocess_region(&$variables) {
+
+    // Create the $content variable that templates expect.
+    $variables['content'] = $variables['elements']['#children'];
+    $variables['region'] = $variables['elements']['#region'];
+    
+  }
 
 /**
  * Implements template_preprocess_views_view().

@@ -1,3 +1,10 @@
 vendor
-sites/default/files/php/twig/
+sites/default/files/
 sites/default/settings.local.php
+sites/development.services.yml
+.sass-cache
+
+sites/*/services*.yml
+sites/*/files
+sites/*/private
+ 

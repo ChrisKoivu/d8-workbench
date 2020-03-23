@@ -1,0 +1,50 @@
+.fixed-bottom, .fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.fixed-top {
+    top: 0;
+}
+
+.bg-dark {
+    background-color: #343a40!important;
+}
+#navbarResponsive {
+   display: inline-block;
+   text-align: right;
+   & ul li {
+    display:inline-block;
+    padding:41px 16px;
+   }
+}
+.navbar-brand {
+font-family: Kaushan Script,Helvetica Neue,Helvetica,Arial,cursive;
+color: #fed136;
+padding:0px 16px;
+}
+
+  ul li .shrink-navbar-height {
+      padding:16px;
+
+}
+
+#block-personal-main-menu {
+   &  #navMenu{
+    display:inline-block;
+    text-align:right;
+
+   }
+       
+    
+}
+
+#mainNav .nav-item .nav-link {
+font-size: 90%;
+    font-weight: 400;
+    padding: .75em 0;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
