@@ -55,6 +55,12 @@
  */
 #}
 
+<style>
+ .admin-view {
+   margin-top:38px;
+ }
+
+</style>
 <div class="off-canvas-wrapper">
   <div class="inner-wrap off-canvas-wrapper-inner" id="inner-wrap" data-off-canvas-wrapper>
     <aside id="left-off-canvas-menu" class="off-canvas left-off-canvas-menu position-left" role="complementary" data-off-canvas>
@@ -167,7 +173,7 @@
       </div>
       {% endif %}
 
-      <div class="row">
+      <div class="row {{ is_admin  ? 'admin-view' : '' }} main-wrapper">
         <main id="main" class="{{ main_grid }} columns" role="main">
           {% if page.highlighted %}
             {% spaceless %}
