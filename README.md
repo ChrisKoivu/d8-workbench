@@ -8,3 +8,6 @@ settings.
 Update the max allowed packet line as shown below:
 
 max_allowed_packet = 64M
+
+Update the php.ini file as follows:
+ memory_limit = 512M
