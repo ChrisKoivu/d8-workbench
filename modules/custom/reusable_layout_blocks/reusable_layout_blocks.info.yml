@@ -1,0 +1,5 @@
+type: module
+name: Reusable Layout Blocks
+description: Allows layout builder inline blocks to be reusable
+package: Test
+core: 8.x

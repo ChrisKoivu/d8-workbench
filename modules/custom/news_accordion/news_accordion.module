@@ -1,0 +1,10 @@
+
+<?php
+
+function news_accordion_theme($existing, $type, $theme, $path) {
+  return [
+    'news_accordion_block' => [
+      'variables' => ['nodes' => NULL, 'labels' => NULL],
+    ],
+  ];
+}

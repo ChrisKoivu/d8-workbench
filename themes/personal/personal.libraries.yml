@@ -2,6 +2,19 @@ global:
   version: VERSION
   css:
     base:
-      css/personal.css: {}
+      fonts/font-awesome.min.css: {}
+      css/overrides.css: {}
+      slick/slick.css: {}
+      slick/slick-theme.css: {}
+      "//fonts.googleapis.com/css?family=Montserrat:400,700": { external: true }
+      "//fonts.googleapis.com/css?family=Kaushan+Script": { external: true }
+      "//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic": { external: true }
+      "//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700": { external: true }
+      "//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700": { external: true }
   js:
-    js/personal.js: {}
+    slick/slick.min.js: {}
+    js/theme.js: {}
+    js/personal.js: {}    
+  dependencies:
+    - core/jquery
+    

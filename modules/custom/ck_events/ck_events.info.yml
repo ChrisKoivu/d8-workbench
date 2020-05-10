@@ -1,0 +1,5 @@
+name: CK Events 
+type: module
+description: Module for testing out event subscribers 
+core: 8.x
+package: Sandbox

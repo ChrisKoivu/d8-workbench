@@ -1,0 +1,34 @@
+<?php
+
+// if updating inline block and not reusable, make it reusable
+function  reusable_layout_blocks_entity_update(Drupal\Core\Entity\EntityInterface $entity) {
+  if($entity->bundle() == 'basic') {
+    $entityTarget = \Drupal::entityTypeManager()
+    ->getStorage('block_content')
+    ->load($entity->id());
+
+    if(!$entityTarget->isReusable()) {        
+       $entityTarget->setReusable();
+       $entityTarget->save();
+       dpm("Existing inline block, Entity id: " . $entity->id() . " has been set to reusable" );
+    }
+  }
+  
+}
+
+
+// when new block is saved set to reusable if not reusable
+function  reusable_layout_blocks_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
+  if($entity->bundle() == 'basic') {
+    $entityTarget = \Drupal::entityTypeManager()
+    ->getStorage('block_content')
+    ->load($entity->id());
+
+    if(!$entityTarget->isReusable()) {        
+       $entityTarget->setReusable();
+       $entityTarget->save();
+       dpm("New inline block, Entity id: " . $entity->id() . " has been set to reusable" );
+    }
+  }
+  
+}
